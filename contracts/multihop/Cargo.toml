@@ -1,0 +1,18 @@
+[package]
+name = "multihop-swap"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+soroban-sdk = { workspace = true }
+num-integer = { workspace = true }
+
+[dev_dependencies]
+soroban-sdk = { workspace = true, features = ["testutils"] }
+
+[features]
+testutils = ["soroban-sdk/testutils"]
