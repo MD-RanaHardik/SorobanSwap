@@ -335,7 +335,7 @@ impl LiquidityPoolTrait for LiquidityPool {
         let amount_out = if swap_x_to_y{
             get_amount_out(x_in, reserve_x, reserve_y)
         }else{
-            get_amount_out(x_in, reserve_y, reserve_x)
+            get_amount_out(x_in, reserve_x, reserve_y)
         };
 
 
